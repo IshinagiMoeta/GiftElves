@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bystanders.moeta.giftelves.view.PagerEnabledSlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingPanelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/menu_background"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_left_screen"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="61dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/main_txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/view"
+            android:layout_toRightOf="@+id/view"
+            android:text="@string/main_login"
+            android:textColor="@color/blank"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/main_txt_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_txt_login"
+            android:layout_toEndOf="@+id/view"
+            android:layout_toRightOf="@+id/view"
+            android:text="0"
+            android:textColor="@color/blank"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/main_txt_gold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/main_txt_gold"
+            android:layout_toRightOf="@+id/main_txt_gold"
+            android:src="@mipmap/gb" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view"
+            android:layout_alignRight="@+id/view"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="56dp"
+            android:button="@null"
+            android:drawableLeft="@mipmap/icon_home"
+            android:text="@string/main_btn_home"
+            android:textColor="@color/blank" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@mipmap/my_gift"
+            android:text="@string/main_btn_gift"
+            android:textColor="@color/blank"
+            android:id="@+id/checkBox4"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/checkBox"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_alignStart="@+id/checkBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@mipmap/send_email"
+            android:text="@string/main_btn_send"
+            android:textColor="@color/blank"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/checkBox4"
+            android:layout_alignLeft="@+id/checkBox4"
+            android:layout_alignStart="@+id/checkBox4" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@mipmap/about_me"
+            android:text="@string/main_btn_about"
+            android:textColor="@color/blank"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/checkBox3"
+            android:layout_alignLeft="@+id/checkBox3"
+            android:layout_alignStart="@+id/checkBox3" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="50dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/main_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/main_bar_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/title_bar_menu" />
+
+            <TextView
+                android:id="@+id/main_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/main_bar_menu"
+                android:layout_centerHorizontal="true"
+                android:text="@string/main_search_hint"
+                android:textColor="@color/blank"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/main_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/main_search_btn"
+                android:textColor="@color/blank"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blank" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blank"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/main_gift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/main_gift_btn"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/main_game"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/main_game_btn" />
+
+            <RadioButton
+                android:id="@+id/main_hot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/main_hot_btn" />
+
+            <RadioButton
+                android:id="@+id/main_special"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/main_special_btn" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</com.bystanders.moeta.giftelves.view.PagerEnabledSlidingPaneLayout>

@@ -1,0 +1,36 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bystanders.moeta.giftelves.fragment.HotFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="3dp"
+            android:text="精品推荐"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.bystanders.moeta.giftelves.view.CustomListView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/hot_list" />
+        <TextView
+            android:padding="3dp"
+            android:text="热门推荐"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <GridView
+            android:id="@+id/hot_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

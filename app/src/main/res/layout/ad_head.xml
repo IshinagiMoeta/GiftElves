@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ff0000"
+    android:layout_height="match_parent">
+    <!--负责放置页面内容的图片-->
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/ad_head_vp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+    </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+
+    <!--负责指示器(圆点)-->
+    <LinearLayout
+        android:id="@+id/ad_head_ponit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@+id/ad_head_vp"
+        android:layout_marginBottom="5dp"
+        >
+
+
+
+    </LinearLayout>
+</RelativeLayout>

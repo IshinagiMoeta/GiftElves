@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/weeklylist_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="title"
+        android:id="@+id/weeklylist_title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/weeklylist_img"
+        android:layout_toEndOf="@+id/weeklylist_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="type"
+        android:id="@+id/weeklylist_type"
+        android:layout_below="@+id/weeklylist_title"
+        android:layout_toRightOf="@+id/weeklylist_img"
+        android:layout_toEndOf="@+id/weeklylist_img" />
+
+    <TextView
+        android:lines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="descs"
+        android:id="@+id/weeklylist_descs"
+        android:layout_alignBottom="@+id/weeklylist_img"
+        android:layout_toRightOf="@+id/weeklylist_img"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:textSize="12sp"
+        android:textColor="@color/blank"
+        android:background="@drawable/gift_list_button"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="下载"
+        android:id="@+id/weeklylist_button"
+        android:layout_above="@+id/weeklylist_descs"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="size"
+        android:id="@+id/weeklylist_size"
+        android:layout_marginRight="103dp"
+        android:layout_marginEnd="103dp"
+        android:layout_below="@+id/weeklylist_title"
+        android:layout_toLeftOf="@+id/weeklylist_button"
+        android:layout_toStartOf="@+id/weeklylist_button" />
+
+</RelativeLayout>

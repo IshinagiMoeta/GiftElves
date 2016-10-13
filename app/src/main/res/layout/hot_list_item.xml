@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/hot_list_image" />
+
+    <TextView
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title"
+        android:id="@+id/hot_list_title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/hot_list_image"
+        android:layout_toEndOf="@+id/hot_list_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="type"
+        android:textSize="12sp"
+        android:id="@+id/hot_list_type"
+        android:layout_below="@+id/hot_list_title"
+        android:layout_toRightOf="@+id/hot_list_image"
+        android:layout_toEndOf="@+id/hot_list_image" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="size"
+        android:id="@+id/hot_list_size"
+        android:layout_below="@+id/hot_list_type"
+        android:layout_toRightOf="@+id/hot_list_image"
+        android:layout_toEndOf="@+id/hot_list_image" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="人正在玩"
+        android:textSize="12sp"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/hot_list_type"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="num"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/hot_list_num"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4" />
+</RelativeLayout>

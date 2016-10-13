@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bystanders.moeta.giftelves.activity.GiftActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/giftactivity_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/giftactivity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/giftactivity_back"
+            android:layout_centerHorizontal="true"
+            android:text="Title"
+            android:textColor="@color/blank"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@mipmap/share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/giftactivity_share" />
+
+    </RelativeLayout>
+
+
+    
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@mipmap/lb_bg"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignLeft="@+id/relativeLayout2"
+        android:layout_alignStart="@+id/relativeLayout2"
+        android:id="@+id/imageView6" />
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/def_bg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:riv_border_width="4dp"
+        app:riv_border_color="@color/colorPrimary"
+        app:riv_corner_radius="100dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/giftactivity_user" />
+    <RelativeLayout
+        android:background="#50000000"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:id="@+id/relativeLayout3">
+
+        <TextView
+            android:textColor="@color/blank"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="有效期:2016-06-16"
+            android:id="@+id/giftactivity_data"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:textColor="@color/blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="礼包剩余:"
+            android:id="@+id/textView5"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/giftactivity_num"
+            android:layout_toStartOf="@+id/giftactivity_num" />
+
+        <TextView
+            android:textColor="#00FFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="200"
+            android:layout_marginRight="10dp"
+            android:id="@+id/giftactivity_num"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="礼包说明"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignLeft="@+id/giftactivity_explains"
+        android:layout_alignStart="@+id/giftactivity_explains"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/giftactivity_explains"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView6" />
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="兑换方式"
+        android:id="@+id/textView8"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/giftactivity_explains"
+        android:layout_alignLeft="@+id/giftactivity_explains"
+        android:layout_alignStart="@+id/giftactivity_explains" />
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/giftactivity_descs"
+        android:layout_below="@+id/textView8" />
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_above="@+id/giftactivity_button"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="1dp"
+        android:id="@+id/linearLayout3" />
+
+    <Button
+        android:textColor="@color/blank"
+        android:background="@drawable/gift_list_button"
+        android:padding="8dp"
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="领取礼包"
+        android:id="@+id/giftactivity_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_margin="10dp"
+        android:src="@mipmap/my_gift_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/giftactivity_button"
+        android:layout_alignRight="@+id/linearLayout3"
+        android:layout_alignEnd="@+id/linearLayout3"
+        android:id="@+id/giftactivity_gift" />
+
+
+</RelativeLayout>

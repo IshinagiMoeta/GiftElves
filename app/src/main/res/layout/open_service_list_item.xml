@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/open_service_list_image" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Title"
+        android:id="@+id/open_service_list_title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/open_service_list_image"
+        android:layout_toEndOf="@+id/open_service_list_image" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="time"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/open_service_list_time"
+        android:layout_below="@+id/open_service_list_title"
+        android:layout_toRightOf="@+id/open_service_list_image"
+        android:layout_toEndOf="@+id/open_service_list_image" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="operators"
+        android:id="@+id/open_service_list_operators"
+        android:layout_below="@+id/open_service_list_time"
+        android:layout_toRightOf="@+id/open_service_list_image"
+        android:layout_toEndOf="@+id/open_service_list_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="area"
+        android:id="@+id/open_service_list_area"
+        android:layout_marginRight="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_alignTop="@+id/open_service_list_time"
+        android:layout_toLeftOf="@+id/open_service_list_button"
+        android:layout_toStartOf="@+id/open_service_list_button" />
+
+    <Button
+        android:layout_marginRight="5dp"
+        android:background="@drawable/gift_list_button"
+        android:textColor="@color/blank"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="查看"
+        android:id="@+id/open_service_list_button"
+        android:layout_alignBaseline="@+id/open_service_list_time"
+        android:layout_alignBottom="@+id/open_service_list_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

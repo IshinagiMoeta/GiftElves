@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@mipmap/g_biao"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
+        android:layout_margin="8dp"
+        android:id="@+id/wednesday_grid_icon" />
+
+    <TextView
+        android:lines="1"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Title"
+        android:id="@+id/wednesday_grid_title"
+        android:layout_below="@+id/wednesday_grid_icon"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:textColor="@color/blank"
+        android:textSize="15sp"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/gift_list_button"
+        android:text="下载"
+        android:id="@+id/wednesday_grid_button"
+        android:layout_below="@+id/wednesday_grid_title"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

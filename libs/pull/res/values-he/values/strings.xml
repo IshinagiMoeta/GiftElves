@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">PulltorefreshListView</string>
+    <string name="menu_refresh">Refresh Immediately!</string>
+    <string name="title_activity_test">RefreshableListView Test Activity!</string>
+    <string name="refresh_pull_down">下拉刷新</string>
+    <string name="refresh_release">松开刷新数据</string>
+    <string name="loading">正在刷新</string>
+    <string name="refresh_pull_up">Pull up to refresh…</string>
+    <string name="refresh_data">上次更新时间:09-30 00:00:00</string>
+
+</resources>
